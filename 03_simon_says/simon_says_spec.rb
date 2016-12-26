@@ -1,16 +1,3 @@
-# # Simon Says
-#
-# ## Topics
-#
-# * functions
-# * strings
-# * default parameter values
-#
-# ## Hints
-#
-# When you make the second `repeat` test pass, you might break the **first**
-#
-
 require "simon_says"
 
 describe "Simon says" do
@@ -68,6 +55,10 @@ describe "Simon says" do
   describe "first_word" do
     it "tells us the first word of 'Hello World' is 'Hello'" do
       expect(first_word("Hello World")).to eq("Hello")
+    end
+
+    it "tells us the first word of 'Hello' is 'Hello'" do
+      expect(first_word("Hello")).to eq("Hello")
     end
 
     it "tells us the first word of 'oh dear' is 'oh'" do
